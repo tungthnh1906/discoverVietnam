@@ -1,0 +1,75 @@
+/* Liên kết skip link */
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  background: white;
+  color: darkgreen;
+  padding: 5px;
+  border: 2px solid darkgreen;
+}
+.skip-link:focus {
+  left: 10px;
+  top: 10px;
+}
+
+/* Navigation (flex) */
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  background-color: lightgreen;
+  padding: 10px;
+}
+nav a {
+  text-decoration: none;
+  color: darkgreen;
+  padding: 6px 10px;
+  border-radius: 6px;
+}
+nav a:hover {
+  background-color: white;
+  color: green;
+}
+
+/* Ảnh (box model) */
+img {
+  border: 3px solid #ccc;
+  padding: 5px;
+  border-radius: 10px;
+  width: 100%;
+  height: auto;
+  transition: 0.3s;
+}
+img:hover {
+  transform: scale(1.05);
+}
+
+/* Gallery (grid) */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+.gallery img:nth-child(odd) {
+  border-radius: 25px;
+}
+
+/* Flex cho about page */
+.flex-container {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.flex-container div {
+  flex: 1 1 300px;
+}
+
+/* Nội dung chung */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: #f6fff6;
+}
+main {
+  padding: 20px;
+}
